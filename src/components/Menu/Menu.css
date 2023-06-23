@@ -1,0 +1,114 @@
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  min-height: 80px;
+  font-weight: var(--font-weight-500);
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+}
+
+.navigation-container,
+.register-actions-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-container {
+  width: 100%;
+}
+
+.register-actions-container {
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.navigation-item,
+.register-action {
+  display: inline-block;
+}
+
+.register-action button {
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: var(--transition-color);
+}
+
+.register-action button:hover {
+  transition: var(--transition-color);
+  color: var(--almost-black-color);
+}
+
+.outline {
+  outline: 2px solid;
+}
+
+a:hover {
+  transition: var(--transition-color);
+  color: var(--almost-black-color);
+}
+
+@media (max-width: 1040px) {
+
+  .menu {
+    position: relative;
+    padding-top: 0px;
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: 20px;
+    display: block;
+  }
+
+  .icon-close-menu {
+    position: absolute;
+    right: 20px;
+  }
+
+  .menu-item {
+    /* display: none; */
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+    right: -65%;
+    width: 65%;
+    height: 100vh;
+    background-color: #fff;
+    transition: var(--transition-right);
+  }
+
+  /* Add this class to the element with menu-item class */
+  .menu-opened {
+    transition: var(--transition-right);
+    right: 0px;
+  }
+
+  .navigation-container,
+  .register-actions-container {
+    flex-direction: column;
+  }
+
+  .navigation-container {
+    height: 50%;
+  }
+
+  .register-actions-container {
+    align-items: center;
+  }
+
+}
