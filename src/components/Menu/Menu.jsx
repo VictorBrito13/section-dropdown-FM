@@ -1,5 +1,7 @@
 import './Menu.css'
 import { useState } from 'react'
+import Dropdown from '../Dropdowm/Dropdown'
+import { dropdowns } from '../../assets/dropdowns'
 
 export default function Menu() {
   const isMobile = window.matchMedia("(max-width: 1040px)").matches
@@ -40,12 +42,18 @@ export default function Menu() {
               />
             </li>
           }
-          <li className='navigation-item'>
-            dropdown 1
-          </li>
-          <li className='navigation-item'>
-            dropdown 2
-          </li>
+
+          {/* Here the dropdowns */}
+          {
+            dropdowns.map((dropdown, index) => {
+              return (
+                <li className='navigation-item' key={index}>
+                  <Dropdown dropdown={dropdown} />
+                </li>
+              )
+            })
+          }
+
           <li className='navigation-item'><a href="#">Careers</a></li>
           <li className='navigation-item'><a href="#">About</a></li>
         </ul>

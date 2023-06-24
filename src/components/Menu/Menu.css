@@ -76,13 +76,16 @@ a:hover {
 
   .icon-close-menu {
     position: absolute;
+    top: 25px;
     right: 20px;
+    z-index: 100;
   }
 
   .menu-item {
-    /* display: none; */
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
     position: absolute;
     top: 0px;
     right: -65%;
@@ -90,6 +93,7 @@ a:hover {
     height: 100vh;
     background-color: #fff;
     transition: var(--transition-right);
+    box-sizing: border-box;
   }
 
   /* Add this class to the element with menu-item class */
@@ -104,7 +108,11 @@ a:hover {
   }
 
   .navigation-container {
-    height: 50%;
+    height: auto;
+  }
+
+  .navigation-item {
+    margin-bottom: 20px;
   }
 
   .register-actions-container {
