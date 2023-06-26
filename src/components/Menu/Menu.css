@@ -86,7 +86,7 @@ a:hover {
     justify-content: flex-start;
     padding-left: 10px;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: -65%;
     width: 65%;
