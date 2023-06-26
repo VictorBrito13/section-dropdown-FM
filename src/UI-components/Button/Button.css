@@ -1,0 +1,12 @@
+button {
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: var(--transition-color);
+}
+
+button:hover {
+  transition: var(--transition-color);
+  color: var(--almost-black-color);
+}

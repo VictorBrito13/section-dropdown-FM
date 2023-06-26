@@ -1,0 +1,43 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 50px 100px;
+}
+
+h1 {
+  color: var(--almost-black-color);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.btn-learn-more {
+  color: var(--almost-white-color);
+  background-color: var(--almost-black-color);
+  outline: 2px solid transparent;
+  margin: 15px 0px;
+  transition: var(--transition-color), var(--transition-bg-color);
+}
+
+.btn-learn-more:hover {
+  transition: var(--transition-color), var(--transition-bg-color);
+  color: var(--almost-black-color);
+  background-color: var(--almost-white-color);
+  outline: 2px solid;
+}
+
+.sponsors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsor {
+  object-fit: contain;
+}
+
+.home-image {
+  background-image: url(./image-hero-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

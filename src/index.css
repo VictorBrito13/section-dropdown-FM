@@ -3,7 +3,8 @@
   --almost-white-color: hsl(0, 0%, 98%);
   --medium-gray-color: hsl(0, 0%, 41%);
   --almost-black-color: hsl(0, 0%, 8%);
-  --transition-color: color .2 linear;
+  --transition-color: color .2s linear;
+  --transition-bg-color: background-color .2s linear;
   --transition-right: right .2s linear;
   --transition-rotate: rotate .2s linear;
   --transition-dropdown:

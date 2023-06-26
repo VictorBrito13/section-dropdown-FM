@@ -1,6 +1,7 @@
 import './Menu.css'
 import { useState } from 'react'
 import Dropdown from '../Dropdowm/Dropdown'
+import Button from '../../UI-components/Button/Button'
 import { dropdowns } from '../../assets/dropdowns'
 
 export default function Menu() {
@@ -57,12 +58,10 @@ export default function Menu() {
           <li className='navigation-item'><a href="#">Careers</a></li>
           <li className='navigation-item'><a href="#">About</a></li>
         </ul>
-      {/* </li> */}
-      {/* Second section (wraps register actions) */}
-      {/* <li className='menu-item'> */}
+        {/* Second section (wraps register actions) */}
         <ul className='register-actions-container'>
-          <li className='register-action'><button>Login</button></li>
-          <li className='register-action'><button className='outline'>Register</button></li>
+          <li className='register-action'><Button text='Login'/></li>
+          <li className='register-action'><Button text='Register' cssClasses={['outline']}/></li>
         </ul>
       </li>
     </menu>
