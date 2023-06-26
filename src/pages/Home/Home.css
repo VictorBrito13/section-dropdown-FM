@@ -42,7 +42,7 @@ h1 {
 
 .home-image {
   grid-area: image;
-  background-image: url(./image-hero-desktop.png);
+  background-image: url(../../assets/image-hero-desktop.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,7 +58,7 @@ h1 {
   }
 
   .home-image {
-    background-image: url(./image-hero-mobile.png);
+    background-image: url(../../assets/image-hero-mobile.png);
     height: 250px;
   }
 
